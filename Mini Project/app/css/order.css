@@ -1,0 +1,106 @@
+/* General Order Container Styles */
+.order-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Kitchen Order Card Styles */
+.kitchen-order-card {
+    background-color: #fffff0; /* Ivory/off-white for a ticket feel */
+    border: 1px solid #ddd;
+    border-left: 5px solid var(--primary); /* A color accent on the left */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace; /* Classic receipt font */
+}
+
+.kitchen-order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.kitchen-order-header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.kitchen-order-header span {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.kitchen-order-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    flex-grow: 1;
+}
+
+.kitchen-order-items li {
+    display: flex;
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.item-quantity {
+    font-weight: bold;
+    margin-right: 15px;
+    min-width: 30px; /* Align items */
+}
+
+.kitchen-order-footer {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    text-align: right;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Styles for Action Buttons */
+.kitchen-order-actions {
+    display: flex;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px dashed #ccc;
+}
+
+.kitchen-order-actions .action-btn {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif; /* Use a more modern font for buttons */
+}
+
+.kitchen-order-actions .prepared-btn {
+    background-color: #dc3545; /* Red for "needs action" */
+    color: white;
+}
+.kitchen-order-actions .prepared-btn:hover { 
+    background-color: #c82333; 
+}
+
+/* Style for the button after it has been clicked */
+.kitchen-order-actions .prepared-btn.clicked {
+    background-color: #28a745; /* Green for "completed" */
+    cursor: not-allowed;
+}
+.kitchen-order-actions .prepared-btn.clicked:hover {
+    background-color: #28a745; /* Keep it green on hover */
+}
